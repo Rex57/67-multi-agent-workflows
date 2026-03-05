@@ -1,6 +1,9 @@
-# The Agent's Guide (`.agents/`)
+# The Agent's Guide (`.agents/`) - Prototype
 
-This folder is the "Brain" of the AI Development Team. It serves as your primary **Instruction Book** and **Map**. Before doing anything, you must read this file to understand the current architecture and protocols.
+> [!IMPORTANT]
+> This framework is a **prototype** and is designed to work exclusively with **Codex as an MCP-server**.
+
+This folder is the "Brain" of the **Gemini Codex Multi-Agentic Framework**. It serves as your primary **Instruction Book** and **Map**. Before doing anything, you must read this file to understand the current architecture and protocols.
 
 ## 🗺️ Directory Map
 
