@@ -15,8 +15,11 @@ This folder is the "Brain" of the **Gemini Codex Multi-Agentic Framework**. It s
 │   ├── SYSTEM_MAP       # Screen-to-Logic wiring diagrams
 │   └── PROJECT_ROADMAP  # High-level feature milestones
 ├── workflows/           # THE ENGINES: Step-by-step automation guides
+│   ├── init_project       # Project initialization engine
+│   ├── define_feature     # Feature specification engine
 │   ├── super_agent_harness # Feature implementation engine
-│   └── deep_audit         # Tech-debt cleanup engine
+│   ├── deep_audit         # Tech-debt cleanup engine
+│   └── sync_core          # Framework synchronization engine
 ├── rules/               # THE POLICE: Critical operating rules for agents
 │   ├── antigravity-agent-rules.md
 │   ├── antigravity-workflow-standard.md
@@ -97,6 +100,8 @@ These are the instructions for standard automation processes.
     *   **The Cleanup Specialist**: Refactors and simplifies existing code to reduce tech debt.
 *   [`workflows/define_feature.md`](./workflows/define_feature.md):
     *   **The Architect's Protocol**: Standardizes how a new idea becomes a set of requirement tasks.
+*   [`workflows/sync_core.md`](./workflows/sync_core.md):
+    *   **The Synchronizer**: Pulls the latest core rules, workflows, and README from the Multi-Agentic Workflows upstream repository without overwriting local project documentation.
 
 ### 📋 Standard for New Workflows
 Every workflow in `.agents/workflows/` must follow this creation standard:
