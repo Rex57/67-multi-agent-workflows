@@ -1,6 +1,6 @@
 ---
+trigger: model_decision
 description: "Guidelines for Codex MCP Server & Agents SDK Integration"
-trigger: "mcp_usage, orchestration_task"
 ---
 
 # 🤖 Codex MCP & Agents SDK Rules
