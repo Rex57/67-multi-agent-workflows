@@ -18,6 +18,8 @@ This folder is the "Brain" of the **Gemini Codex Multi-Agentic Framework**. It s
 │   ├── super_agent_harness # Feature implementation engine
 │   └── deep_audit         # Tech-debt cleanup engine
 ├── rules/               # THE POLICE: Critical operating rules for agents
+│   ├── antigravity-agent-rules.md
+│   └── codex-orchestration-rules.md
 ├── requirements.json    # THE QUEUE: Master list of all tasks/features
 ├── progress.txt         # THE LOG: History of session activities
 └── README.md            # THIS FILE: Your entry point and map

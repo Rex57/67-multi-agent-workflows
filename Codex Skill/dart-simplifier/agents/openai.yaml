@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dart Code Simplifier"
+  short_description: "Refine Dart/Flutter code with zero behavior changes"
+  default_prompt: "Use $dart-code-simplifier to simplify this Dart/Flutter code while preserving all functionality and enforcing project standards."

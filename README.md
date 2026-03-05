@@ -12,6 +12,7 @@ It is designed to be a standalone, reusable "Brain" that can be dropped into any
 ## Structure
 - `workflows/`: The automation engines (step-by-step guides for the AI).
 - `rules/`: The operating laws that govern AI behavior.
+- `Codex Skill/`: Specialized skills and tools dedicated for use by the Codex Builder.
 - `README.md`: The central map and instruction book for the agents.
 - `docs/`: Template files for project-specific memory, standards, system maps, and roadmaps.
 
