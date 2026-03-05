@@ -1,6 +1,11 @@
-# `.agents` Framework (Super AI)
+# Gemini Codex Multi-Agentic Framework (Prototype)
 
-Welcome to the **Super AI Agentic Framework**. This repository contains the core logic, standards, and orchestration engines for AI-assisted development.
+> [!IMPORTANT]
+> This project is a **prototype** and is currently designed to work exclusively with **Codex as an MCP-server**.
+
+Welcome to the **Gemini Codex Multi-Agentic Framework**. This repository contains the core logic, standards, and orchestration engines for AI-assisted development. 
+
+Please note: This is not a "Super AI Agentic Framework." It is a specialized **Gemini Codex Multi-Agentic Framework** designed for high-precision code orchestration.
 
 It is designed to be a standalone, reusable "Brain" that can be dropped into any project.
 
