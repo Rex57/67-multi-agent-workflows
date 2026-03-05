@@ -19,6 +19,7 @@ This folder is the "Brain" of the **Gemini Codex Multi-Agentic Framework**. It s
 │   └── deep_audit         # Tech-debt cleanup engine
 ├── rules/               # THE POLICE: Critical operating rules for agents
 │   ├── antigravity-agent-rules.md
+│   ├── antigravity-workflow-standard.md
 │   └── codex-orchestration-rules.md
 ├── requirements.json    # THE QUEUE: Master list of all tasks/features
 ├── progress.txt         # THE LOG: History of session activities
@@ -111,7 +112,20 @@ Every workflow in `.agents/workflows/` must follow this creation standard:
 
 ---
 
-## 4. Workflow Technical Guide
+## 4. Rules (The "Police")
+
+These rules ensure agents operate safely, consistently, and without breaking the project flow.
+
+*   [`rules/antigravity-agent-rules.md`](./rules/antigravity-agent-rules.md):
+    *   **Core Operating Law**: Defines the roles, grounding phase mandate, discovery requirements, and the Two-Strike rule. You MUST abide by these overarching laws.
+*   [`rules/antigravity-workflow-standard.md`](./rules/antigravity-workflow-standard.md):
+    *   **Workflow Creation Standard**: Dictates how all other `.agents/workflows/` files must be formatted, ensuring standard YAML frontmatter and proper pure-markdown structure. 
+*   [`rules/codex-orchestration-rules.md`](./rules/codex-orchestration-rules.md):
+    *   **Codex Integration Sandbox**: Specifically covers how to use the `codex-mcp-server`, managing sandbox permissions, fallback logic, and conversation continuity.
+
+---
+
+## 5. Workflow Technical Guide
 
 This section provides a detailed technical breakdown of the two primary orchestration engines.
 

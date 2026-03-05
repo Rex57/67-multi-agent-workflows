@@ -8,5 +8,4 @@ This folder contains specialized skills designed for **Codex** to use within the
 > **Future Roadmap**: We plan to update these skills to be framework-agnostic so they can be used in any environment in the future.
 
 ## Current Skills
-- **Skill1**: [Add description if known]
 - **dart-simplifier**: Automated logic for cleaning and simplifying Dart/Flutter code.
