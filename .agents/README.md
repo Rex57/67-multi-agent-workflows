@@ -46,6 +46,7 @@ The `.agents` folder relies on the following native protocol connections:
 - **`github-mcp-server`**: Manages PRs, Issues, and version control governance.
 - **`firebase-mcp-server`**: Validates backend state, Firestore rules, and Auth config.
 - **`stitch-mcp-server`**: Bridges the gap between UI designs and living code.
+- **`pencil-mcp-server`**: Professional design canvas for reading/writing .pen files and visual verification.
 
 ---
 

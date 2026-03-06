@@ -20,10 +20,11 @@ description: Unified Super-Harness for long-running agent autonomy. Integrates A
 4. **Git Branching**: Create a fresh branch for this task: `git checkout -b task/<TASK_ID>`.
 
 ## Phase 2: Planning Mode & Execution (The "Triple-Check" Lifecycle)
-1. **Visual Alignment (StitchMCP)**:
-   - Identify the persistent **Stitch Project ID** (if applicable) from @[.agents/docs/PROJECT_MEMORY.md].
-   - If UI-related, use `generate_screen_from_text` with that `projectId` to draft screens according to the project's Design Law standards.
-   - Attach design metadata to the plan.
+1. **Visual Alignment (Design Context)**:
+   - Identify the **Preferred Design Tool** and config from @[.agents/docs/PROJECT_MEMORY.md].
+   - **Scenario A (Stitch)**: If UI-related, use `generate_screen_from_text` with the `projectId` to draft screens.
+   - **Scenario B (Pencil)**: If UI-related, use `open_document` with the `filePath`, then `batch_get` to read relevant nodes and `get_screenshot` for visual grounding.
+   - Attach design metadata and raw node layout/screenshots to the implementation plan.
   
 2. **Step A: Architectural Plan (The "What")**:
    - **Resume Check**: If `task_plan.md` already exists for this task (e.g., interrupted session), SKIP Step A. Start a fresh Codex MCP session asking it to read the existing `task_plan.md` and proceed to Step B.
@@ -70,7 +71,7 @@ description: Unified Super-Harness for long-running agent autonomy. Integrates A
 2. **Native UI & Live Monitoring (Dart MCP)**:
    - Use `launch_app` to start the app in Chrome/Simulator.
    - Use `get_widget_tree` and tools to verify the feature end-to-end.
-   - Capture a `screenshot` to confirm adherence to the custom Design Law established in `PROJECT_MEMORY.md`.
+   - **Verification**: Capture a `screenshot` (via Dart MCP or Pencil `get_screenshot`) to confirm adherence to the custom Design Law established in `PROJECT_MEMORY.md`.
 3. **Error Check & Emergency Revert Protocol**:
    - Check `get_runtime_errors` and `get_app_logs`. No exceptions allowed.
    - **EMERGENCY FALLBACK**: If the code is broken (failed analysis/tests) and Codex cannot fix it within 2 attempts:

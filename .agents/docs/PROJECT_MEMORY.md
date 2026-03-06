@@ -12,7 +12,12 @@ Long-term strategic memory and historic context for the Gemini Codex Multi-Agent
 ## 3. Business Logic
 - Multi-agent handoffs between Gemini and Codex to ensure code quality through a "Plan -> Code -> Verify" lifecycle.
 
-## 4. Feature Blueprint
+## 4. Design Infrastructure
+- **Preferred Design Tool**: Specify `stitch` or `pencil`.
+- **Stitch Config**: `projectId` (if using Stitch).
+- **Pencil Config**: `filePath` (if using Pencil).
+
+## 5. Feature Blueprint
 - **Super-Agent Harness**: Automated feature implementation.
 - **Deep Audit**: Automated code simplification and refactoring.
 
