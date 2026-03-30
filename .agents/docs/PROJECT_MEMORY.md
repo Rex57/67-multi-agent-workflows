@@ -1,36 +1,70 @@
 # Project Memory
 
-Long-term strategic memory and historic context for the Gemini Codex Multi-Agentic Framework.
+Durable project context for the repository using this framework. Keep this file concise, current, and specific to the target project.
 
-## 1. Project Strategy
-- **Core Framework**: Protytype Multi-Agentic orchestration using Gemini (Orchestrator) and Codex (Builder).
-- **Communication Protocol**: Model Context Protocol (MCP) for tool binding.
+## Learning First
 
-## 2. Design Law
-- Follows the "Liquid Glass UI" standards (Radius 32) as specified in `PROJECT_STANDARDS.md`.
+Always read this section before any other section in this file.
 
-## 3. Business Logic
-- Multi-agent handoffs between Gemini and Codex to ensure code quality through a "Plan -> Code -> Verify" lifecycle.
+Use this section for durable lessons discovered while working in the target project, especially:
 
-## 4. Design Infrastructure
-- **Preferred Design Tool**: Specify `stitch` or `pencil`.
-- **Stitch Config**: `projectId` (if using Stitch).
-- **Pencil Config**: `filePath` (if using Pencil).
+- repeated mistakes
+- tool usage quirks
+- validation gotchas
+- architecture traps
+- user preference patterns
+- commands or environment notes future agents should not rediscover
 
-## 5. Feature Blueprint
-- **Super-Agent Harness**: Automated feature implementation.
-- **Deep Audit**: Automated code simplification and refactoring.
+Use this entry format:
 
-## 5. Implementation History
-### March 2026
-- Initial documentation of Codex MCP rules and Agents SDK integration patterns.
-- Verification of `codex-cli` v0.107.0 as the primary Builder tool.
+- YYYY-MM-DD: What happened. Why it mattered. What to do next time.
 
-## 6. Security Protocol
-- No secrets allowed in the `.agents` folder.
-- Guardrails implemented via MCP approval policies.
+If there are no project-specific lessons yet, leave this section minimal:
 
-## 7. Lessons Learned & Discoveries
-- **Discovery**: The `codex-mcp-server` relies on the `codex` command being globally available via `npm install -g @openai/codex-cli`.
-- **Fix**: Verified that `codex --version` is the reliable way to check health before starting an orchestration run.
-- **Gotcha**: Sessions in Codex are maintained via a `threadId` (or `thread_id` depending on API version). Always store and pass this ID to maintain state across multiple turns in a single task.
+- No project-specific lessons recorded yet.
+
+## Project Summary
+
+Capture only the essential long-lived context:
+
+- product or system:
+- target users:
+- main problem being solved:
+- primary stack:
+- primary environments:
+
+## Architecture Decisions
+
+Record decisions that future agents should preserve unless the task explicitly changes them:
+
+- major layers or modules:
+- data flow or state management:
+- important boundaries:
+- critical invariants:
+
+## Product And UX Constraints
+
+List durable constraints that affect implementation:
+
+- brand or design constraints:
+- business rules:
+- performance constraints:
+- accessibility or localization constraints:
+
+## Validation And Delivery Notes
+
+Document only stable, reusable guidance:
+
+- formatter:
+- lint or analyze commands:
+- test commands:
+- smoke or deploy checks:
+- known environment quirks:
+
+## Open Risks Or Watchouts
+
+Keep only durable risks that matter across multiple tasks:
+
+- risk:
+- impact:
+- mitigation:
